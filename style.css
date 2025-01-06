@@ -1,0 +1,415 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+    header {
+        background-color: black;
+        height: 90px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        gap: 50px;              
+        padding: 0 20px;        
+        position: fixed;       
+        top: 0;                  
+        left: 0;               
+        width: 100%;            
+       z-index: 1000;           
+    }
+
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding-top: 90px;       /* Добавляем отступ сверху, чтобы контент не перекрывался header */
+    }
+    
+
+.logo {
+    width: 150px;
+    height: auto;            /* Сохраняет пропорции изображения */
+}
+
+nav {
+    display: flex;
+    gap: 30px;               /* Расстояние между ссылками */
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s;  /* Плавный переход цвета */
+}
+
+nav a:hover {
+    color: green;
+}
+
+header p {
+    font-size: 20px;
+    color: white;
+    margin: 0;               /* Убираем внешние отступы */
+}
+
+header p:hover {
+    text-decoration: underline;
+}
+
+main{
+    background-image:url(https://static.tildacdn.com/tild6139-3531-4063-b466-316532376635/Kompiuterniy_klub_fo.jpg);
+    background-size: cover;
+    height: 600px;
+
+    
+}
+
+main h1{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top:200px
+}
+
+main p{
+    color:white ;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 200px;
+  
+    
+}
+
+body{background-color: black;
+    color: white;
+    font-family: roboto, sans-serif;
+}
+
+button{
+    background-color: green;
+    width: 200px;
+    height: 60px;
+    border-radius:5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.button-one{width: 200px;
+    height: 60px;
+margin: 0 auto;}
+
+button:hover{
+    background-color: #6D8C00;
+}
+
+
+.small p{
+color: green;
+display: inline-block;
+margin-left: 100px;
+font-weight: 700;
+}
+
+
+
+
+
+.image-text::before {
+    content: '';
+    display: inline-block;   /* Чтобы элемент мог иметь ширину и высоту */
+    width: 50px;            /* Установите нужную ширину */
+    height: 50px;           /* Установите нужную высоту */
+    background-image: url('https://i.postimg.cc/brb317vV/laptop.png');
+    background-size: contain;  /* Масштабирует изображение, чтобы оно полностью вместилось */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+    margin-right: 10px;     /* Отступ справа для разделения картинки и текста */
+    vertical-align: middle; /* Выравнивание по вертикали с текстом */
+}
+
+
+.image-text2::before {
+    content: '';
+    display: inline-block;   /* Чтобы элемент мог иметь ширину и высоту */
+    width: 30px;            /* Установите нужную ширину */
+    height: 30px;           /* Установите нужную высоту */
+    background-image: url('https://i.postimg.cc/Y2yXZxgC/accept.png');
+    background-size: contain;  /* Масштабирует изображение, чтобы оно полностью вместилось */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+    margin-right: 10px;     /* Отступ справа для разделения картинки и текста */
+    vertical-align: middle; /* Выравнивание по вертикали с текстом */
+}
+
+
+
+.image-text3::before {
+    content: '';
+    display: inline-block;   /* Чтобы элемент мог иметь ширину и высоту */
+    width: 30px;            /* Установите нужную ширину */
+    height: 30px;           /* Установите нужную высоту */
+    background-image: url('https://i.postimg.cc/5t0gsY0C/game-console.png');
+    background-size: contain;  /* Масштабирует изображение, чтобы оно полностью вместилось */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+    margin-right: 10px;     /* Отступ справа для разделения картинки и текста */
+    vertical-align: middle; /* Выравнивание по вертикали с текстом */
+}
+
+
+.container {
+    display: flex;
+    align-items: center; /* Центрирование элементов по вертикали */
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.container img {
+    max-width: 50%; /* Занимает половину ширины */
+    height: auto;
+    display: block;
+}
+
+.text {
+    max-width: 50%; /* Занимает половину ширины */
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует текст по вертикали */
+    text-align: center; /* Центрирует текст по горизонтали */
+    margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container img, .text {
+        max-width: 100%; /* На мобильных устройствах элементы занимают всю ширину */
+    }
+}
+
+
+
+.processors{
+    background-color: green;
+    width: 800px;
+    height: 800px;
+    display: flex;
+}
+
+.texno{
+    display: flex;
+}
+
+.carta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(https://i.postimg.cc/8PGspNZK/Screenshot-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 200px;
+  }
+
+
+
+
+  .carta2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    position: relative;
+    margin-bottom: 200px;
+  }
+
+
+
+
+
+
+
+
+
+  .page, .page2 {
+    width: 45%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .page {
+    background-image: url('URL_картинки_для_page');
+  }
+
+  .page2 {
+    background-image: url('URL_картинки_для_page2');
+  }
+
+  .page p, .page2 p {
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+  }
+
+  .title, .title2, .title3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  span {
+    color: #a5d300;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.text-page {
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center; 
+}
+
+
+
+
+.carta2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+    width: 70%; 
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.page-img, .page-img2 {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.page-img {
+    background-image: url(https://burobiz-a.akamaihd.net/uploads/images/140091/large_80.jpg);
+}
+
+.page-img2 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Va9kJVOOv1jzhMon0xAsPX4eW96U9YodPw&s);
+}
+
+
+
+.page-img, .page-img2 {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.page-img {
+    background-image: url(https://burobiz-a.akamaihd.net/uploads/images/140091/large_80.jpg);
+}
+
+.page-img2 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Va9kJVOOv1jzhMon0xAsPX4eW96U9YodPw&s);
+}
+
+
+.page-img p, .page-img2 p
+{font-size: 26px;
+line-height: 40px;
+margin-bottom: 200px;}
+
+
+
+
+
+
+
+
+
+.carta3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+    width: 80%; 
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+
+
+.page3 h1{
+font-size: 30px;
+}
+
+
+.title3{
+    margin-bottom: 300px;
+}
+
+.page3 p{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
